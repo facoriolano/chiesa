@@ -2,14 +2,13 @@
   <img src="logo.png" alt="Logo Igreja">
 </div>
 <style>
-  #logo img {
-  animation: pulse 5s ease-in-out infinite;
+ #logo img {
+  animation: glow 4s ease-in-out infinite;
 }
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+@keyframes glow {
+  0%, 100% { filter: drop-shadow(0 0 2px rgba(255,255,255,0.5)); }
+  50% { filter: drop-shadow(0 0 10px rgba(255,255,255,1)); }
 }
-
   @keyframes aparecer {
     to {
       opacity: 1;
